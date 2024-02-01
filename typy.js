@@ -43,6 +43,8 @@ const osoba = {
 
 console.log(osoba.wiek);
 
+const zmiennaLiczbowa = "47";
+
 
 //zabawa z typami danych
 console.log(pierwszeImie.length);
@@ -54,4 +56,6 @@ const wynikDodawania = liczba + zwierze;
 
 console.log(liczba2.toFixed(0)); //zaokrągla wartość do określonych miejsc po przecinku
 
-console.log(typeof(String(liczba)))
+console.log(typeof(String(liczba)));
+console.log(zmiennaLiczbowa);
+console.log(Number(zmiennaLiczbowa));
