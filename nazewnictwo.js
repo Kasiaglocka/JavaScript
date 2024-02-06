@@ -17,4 +17,4 @@ const pierwszA = 2;
 //let const = "Kornelia";
 
 const pierwszeImieOsoby = "Karolina"; //Camel case
-const pierwsze_imie_osoby = "Michał";
+const pierwsze_imie_osoby = "Michał"; //Dolne podkreślenie
