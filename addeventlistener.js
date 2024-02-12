@@ -2,6 +2,8 @@ const h2Band = document.querySelector("div#band h2");
 const p = document.querySelector("p.w3-justify");
 const buyTicketBtn = document.querySelector("#buy-ticket");
 const formContact = document.querySelector("form");
+const link = document.querySelector(`div.w3-top div.w3-bar a[href="#contact"]`);
+const inputName = ducument.querySelector(`input[name="Name]`);
 
 //Zdarzenie kliknięcie
 
@@ -50,4 +52,31 @@ buyTicketBtn.addEventListener("mouseout", e => {
 formContact.addEventListener("submit", e => {
     e.preventDefault();
     console.log("TEST");
+})
+
+link.addEventListener("click", event => {
+    event.preventDefault();
+})
+
+//Keydown, keyup
+inputName.addEventListener("keydown", () =>{
+    console.log("Uruchomiono zdarzenie KEYDOWN!!!")
+})
+
+inputName.addEventListener("keyup", () => {
+    console.log("Uruchomiono zdarzenie KEYUP!!")
+})
+
+//Scroll
+//window.addEventListener("scroll", () => {
+    //console.log("SCROLL!!") 
+//})
+
+window.addEventListener("scroll", e => {
+    //console.log(window.scrollY)
+})
+
+//Wykonanie zdarzenia po wczytaniu się w pełni DOM
+window.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM wczytał się poprawnie!")
 })
